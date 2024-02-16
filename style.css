@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sixtyfour&display=swap')
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu{
+    height: 90px;
+    background-color: rgb(10, 215, 230);
+    position: relative;
+}
+.PC{
+    height: 10px;
+}
+nav{
+    position: absolute;
+    right: 12px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 20px 40px;
+    font-size: larger;
+}
+div a{
+    text-decoration: none;
+    color: brown;
+    display: block;
+    text-transform: uppercase;
+}
+.PC img{
+    height: 90px;
+    width: 200px;
+}
+/* --- header --- */
+header{
+    height: 700px;
+    position: relative;
+	background-image: url("images/shutterstock_1043722582.jpg");
+	background-size: cover;
+}
+header p{
+	position: absolute;
+	right: 70px;
+	bottom: 20px;
+	font-size: 50pt;
+	line-height: 1;
+	color: #49f0e7;
+}
+header p span{
+	font-size: 65pt ;
+}
+.text_back{
+	background-image: url("images/laptop.jpg");
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.text_font{
+	mix-blend-mode: color;
+}
+.about_IT{
+    height: 800px;
+	background-image: url(images/Earth.jpg);
+	display: flex;
+	box-shadow: 2px 0 8px 2px black, -2px 0 5px 1px white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    display: none;
+}
+.controls{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    opacity: 0.8;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 50px;
+	position: relative;
+	transition: background ease-in-out .5s;
+    border: 1px#49f0e7 solid;
+}
+.about_IT div{
+    overflow: hidden;
+	width:0;
+	background-color: rgba(209, 238, 255, 0.8);
+	transition: width .5s;
+}
+#data1:checked ~ div:nth-of-type(1){
+	width: 100%;	
+}
+#data2:checked ~ div:nth-of-type(2){
+	width: 100%;	
+}
+#data3:checked ~ div:nth-of-type(3){
+	width: 100%;	
+}
+#data4:checked ~ div:nth-of-type(4){
+	width: 100%;	
+}
+#data5:checked ~ div:nth-of-type(5){
+	width: 100%;	
+}
+.about_IT input:checked + .controls{
+	background-color: rgb(255, 255, 255);
+}
+label img{
+    width: 50px;
+    height: 50px;
+}
+
+main{
+	height: 800px;
+	background-image: url("images/montage.jpg");
+	background-size: cover;
+	position: relative;
+}
+h1{
+	display:flex;
+	justify-content:center;
+	color:aqua;
+}
+.media{
+	display: flex;
+}
+.video{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+iframe{
+	width: 800px;
+	height: 700px;
+	position: absolute;
+	top: 15px;
+	left: 650px;
+}
+video{
+	position: absolute;
+	top: 200px;
+}
+.footer{
+	min-height: 670px;
+	background-size: cover;
+	background-image: url(images/technologies.jpg);
+	background-size: cover;
+}
+.accordion ul{
+	list-style: none;
+}
+.accordion{
+	display: flex;
+	background-image: linear-gradient(to bottom right, #EAFC83 0%, #9FC6F5 60%, #3366FF 85%, #1F3E9C 100%);
+}
+.back{
+	position: fixed;
+	bottom: 1px;
+}
+.back img{
+	height: 100px;
+	width: 100px;
+}
